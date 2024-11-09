@@ -36,11 +36,11 @@ done
 
 
 %install
-install -Dm644 -T /target/zellij.bash %{buildroot}/usr/share/bash-completion/completions/zellij
-install -Dm644 -T /target/zellij.fish %{buildroot}/usr/share/fish/vendor_completions.d/zellij.fish
-install -Dm644 -T /target/zellij.zsh %{buildroot}/usr/share/zsh/site-functions/_zellij
-install -Dm644 -T /assets/logo.png %{buildroot}/usr/share/pixmaps/%{name}.png
-install -Dm644 -T /assets/%{name}.desktop %{buildroot}/usr/share/applications/%{name}.desktop
+install -Dm644 -T target/zellij.bash %{buildroot}/usr/share/bash-completion/completions/zellij
+install -Dm644 -T target/zellij.fish %{buildroot}/usr/share/fish/vendor_completions.d/zellij.fish
+install -Dm644 -T target/zellij.zsh %{buildroot}/usr/share/zsh/site-functions/_zellij
+install -Dm644 -T assets/logo.png %{buildroot}/usr/share/pixmaps/%{name}.png
+install -Dm644 -T assets/%{name}.desktop %{buildroot}/usr/share/applications/%{name}.desktop
 install -Dm755 target/release/zellij -t %{buildroot}/usr/bin
 strip %{buildroot}/usr/bin/zellij
 
