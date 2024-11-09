@@ -46,7 +46,6 @@ strip %{buildroot}/usr/bin/zellij
 
 %files
 %defattr(-,root,root,-)
-%license MIT
 /usr/bin/zellij
 /usr/share/applications/zellij.desktop
 /usr/share/pixmaps/zellij.svg
