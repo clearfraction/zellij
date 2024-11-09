@@ -48,7 +48,7 @@ strip %{buildroot}/usr/bin/zellij
 %defattr(-,root,root,-)
 /usr/bin/zellij
 /usr/share/applications/zellij.desktop
-/usr/share/pixmaps/zellij.svg
+/usr/share/pixmaps/zellij.png
 /usr/share/bash-completion
 /usr/share/fish
 /usr/share/zsh
