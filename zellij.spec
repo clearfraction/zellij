@@ -34,28 +34,28 @@ export RUSTFLAGS="$RUSTFLAGS -C target-cpu=westmere -C target-feature=+avx -C op
 # First rebuilt plugins we just deleted
 # Note: RUSTFLAGS break linking with WASM-files, so we don't use the cargo_build-macro here
 pushd default-plugins/compact-bar
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/status-bar
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/tab-bar
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/strider
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/session-manager
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/fixture-plugin-for-tests
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/configuration
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 pushd default-plugins/plugin-manager
-cargo --offline build --release --target=wasm32-wasi
+cargo build --release --target=wasm32-wasi
 popd
 
 
